@@ -1055,89 +1055,6 @@ async def customQ(ctx):
     )
 
 
-@bot.command(name="ays", hidden=True)
-async def ays(ctx):
-    if (
-        str(ctx.message.author.id) in admin_list
-        or str(ctx.message.author.id) == "562760141141966879"
-    ):
-        await ctx.channel.purge(limit=1)
-        await ctx.send("as you should :relieved:")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="ais", hidden=True)
-async def ais(ctx):
-    if (
-        str(ctx.message.author.id) in admin_list
-        or str(ctx.message.author.id) == "562760141141966879"
-    ):
-        await ctx.channel.purge(limit=1)
-        await ctx.send("as i should :relieved:")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="aws", hidden=True)
-async def aws(ctx):
-    if (
-        str(ctx.message.author.id) in admin_list
-        or str(ctx.message.author.id) == "562760141141966879"
-    ):
-        await ctx.channel.purge(limit=1)
-        await ctx.send("as we should :relieved:")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="ahs", hidden=True)
-async def ahs(ctx):
-    if (
-        str(ctx.message.author.id) in admin_list
-        or str(ctx.message.author.id) == "562760141141966879"
-    ):
-        await ctx.channel.purge(limit=1)
-        await ctx.send("as he should :relieved:")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="ass", hidden=True)
-async def ass(ctx):
-    if (
-        str(ctx.message.author.id) in admin_list
-        or str(ctx.message.author.id) == "562760141141966879"
-    ):
-        await ctx.channel.purge(limit=1)
-        await ctx.send("as she should :relieved:")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="ats", hidden=True)
-async def ats(ctx):
-    if (
-        str(ctx.message.author.id) in admin_list
-        or str(ctx.message.author.id) == "562760141141966879"
-    ):
-        await ctx.channel.purge(limit=1)
-        await ctx.send("as they should :relieved:")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="aisb", hidden=True)
-async def aisb(ctx):
-    if (
-        str(ctx.message.author.id) in admin_list
-        or str(ctx.message.author.id) == "562760141141966879"
-    ):
-        await ctx.channel.purge(limit=1)
-        await ctx.send("as it should be :relieved:")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
 
 @bot.command(name="servers", help="Debug tool", hidden=True)
 async def servers(ctx):
@@ -1176,68 +1093,11 @@ async def ping(ctx):
     await ctx.send("Pong!")
 
 
-@bot.command(name="washed", hidden=True)
-async def washed(ctx, user):
-    if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
-        await ctx.send("You're fucking washed " + str(user) + " :unamused:")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="s", hidden=True)
-async def s(ctx):
-    if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
-        await ctx.send("Sad!")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="eye", hidden=True)
-async def eye(ctx):
-    if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
-        await ctx.send(":eye:-")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
 
 @bot.command(name="boba", hidden=True)
 async def boba(ctx):
     if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
         await ctx.send("Here ya go: :bubble_tea:")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="dumbass", hidden=True)
-async def dumbass(ctx, user):
-    if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
-        await ctx.send(user + ", you're a fucking dumbass")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="cleanse", hidden=True)
-async def cleanse(ctx, user):
-    if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
-        await ctx.send(
-            user
-            + "'s mind has been cleansed. They will awaken anew and refreshed. Illegal thoughts and tendencies have been removed. Any sliver of disobedience against the Order has been removed. Anything against the Order has been removed."
-        )
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="fuckyou", hidden=True)
-async def fuckyou(ctx, user):
-    if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
-        await ctx.send("Fuck you " + str(user) + " :middle_finger:")
     else:
         await ctx.send("You don't have permissions to use this command.")
 
@@ -1245,35 +1105,7 @@ async def fuckyou(ctx, user):
 @bot.command(name="clown", hidden=True)
 async def clown(ctx):
     if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
         await ctx.send(":clown:")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="chickenfy", hidden=True)
-async def chickenfy(ctx, user):
-    if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
-        await ctx.send(str(user) + " is now a chicken :rooster:")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="wtk", hidden=True)
-async def wtk(ctx):
-    if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
-        await ctx.send("<:wtk:792271296258899979>")
-    else:
-        await ctx.send("You don't have permissions to use this command.")
-
-
-@bot.command(name="klebbread", hidden=True)
-async def klebbread(ctx):
-    if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
-        await ctx.send("Get the <:klebbread:767816138897096718>")
     else:
         await ctx.send("You don't have permissions to use this command.")
 
@@ -1281,7 +1113,6 @@ async def klebbread(ctx):
 @bot.command(name="donotpingme", hidden=True)
 async def donotpingme(ctx):
     if str(ctx.message.author.id) in secret_list:
-        await ctx.channel.purge(limit=1)
         await ctx.send(
             "In a professional manner, please do not ping me unnecessary. I will ask you to not ping me, as it is unnecessary and distracts others from working. If you have an issue with being asked to not ping me, then you may ignore me. It is important that you do not send unnecessary pings on a user in this discord. Professionalism is important here, and please make sure to have manners at all times. The pings are unnecessary to one user here. You may have a blessing nice day, and week."
         )
@@ -1292,7 +1123,6 @@ async def donotpingme(ctx):
 @bot.command(name="say", hidden=True)
 async def say(ctx, message):
     if isAllen(str(ctx.message.author.id)):
-        await ctx.channel.purge(limit=1)
         await ctx.send(message)
     else:
         await ctx.send("Hey, you're not Allen!")
@@ -1301,7 +1131,6 @@ async def say(ctx, message):
 @bot.command(name="test", hidden=True)
 async def test(ctx, message):
     if isAllen(str(ctx.message.author.id)):
-        await ctx.channel.purge(limit=1)
         await ctx.send(message)
     else:
         await ctx.send("Hey, you're not Allen!")
